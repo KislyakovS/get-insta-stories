@@ -28,6 +28,6 @@ bot.on('message', async (msg) => {
             }
         })
     } catch (error) {
-        btn.sendMessage(chatId, `Error when getting a story from ${text}`);
+        bot.sendMessage(chatId, `Error when getting a story from ${text}`);
     }
 });
