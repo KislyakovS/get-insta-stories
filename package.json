@@ -4,7 +4,7 @@
   "description": "Get a stories from instagram",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "nodemon index.js"
   },
   "keywords": [
     "instagram",
@@ -17,5 +17,8 @@
     "dotenv": "^10.0.0",
     "instagram-stories": "^1.1.2",
     "node-telegram-bot-api": "^0.54.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.12"
   }
 }
