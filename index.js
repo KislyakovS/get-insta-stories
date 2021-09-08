@@ -16,7 +16,7 @@ bot.on('message', async (msg) => {
         bot.deleteMessage(chatId, loadingMessage.message_id);
 
         if (stories.length === 0) {
-            bot.sendMessage(chatId, `The user ${text} has no stories`);
+            bot.sendMessage(chatId, `The user @${text} has no stories`);
             return;
         }
 
@@ -28,6 +28,6 @@ bot.on('message', async (msg) => {
             }
         })
     } catch (error) {
-        bot.sendMessage(chatId, `Error when getting a story from ${text}`);
+        bot.sendMessage(chatId, `Error when getting a story from @${text}`);
     }
 });
