@@ -11,7 +11,7 @@
     "insta",
     "stories"
   ],
-  "author": "",
+  "author": "Alexandr Kislyakov",
   "license": "ISC",
   "dependencies": {
     "dotenv": "^10.0.0",

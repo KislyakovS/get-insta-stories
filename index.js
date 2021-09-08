@@ -9,6 +9,11 @@ const bot = new TelegramBot(TELEGRAM_TOKEN, { polling: true });
 bot.on('message', async (msg) => {
     const { text, chat: { id: chatId } } = msg;
 
+    if (text === "/start") {
+        bot.sendMessage(chatId, 'Hello!\n\nGetting stories from instagram by profile name.');
+        return;
+    }
+
     try {
         const loadingMessage = await bot.sendMessage(chatId, 'loading...');
         const stories = await Instagram.getStoriesByUsername(text);
